@@ -10,7 +10,8 @@ name = st.text_input("enter your name:")
 wt = st.number_input("enter your weight:")
 ht = st.slider("enter your height in cm:", 50,250)
 age = st.number_input("Enter your age:")
-gender = st.text_input("Enter your gender:")
+gender = st.selectbox("Select your gender:", ["Male", "Female", "Other"])
+
 
 bmi=round(wt/(ht/100)**2,2)
 
